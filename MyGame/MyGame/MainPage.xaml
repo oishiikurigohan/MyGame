@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MyGame"
+             x:Class="MyGame.MainPage">
+
+	<Grid x:Name="MyGrid">
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="End" Grid.Row="1" Grid.Column="0">
+            <Button x:Name="MoveLeftButton"  Text="{local:Translate moveLeftButtonText}" />
+            <Button x:Name="MoveRightButton" Text="{local:Translate moveRightButtonText}" />
+        </StackLayout>
+
+    </Grid>
+
+</ContentPage>
